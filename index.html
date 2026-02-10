@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Diary</title>
+
+<!-- Required Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #e9d8d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#flipbook {
+  width: 900px;
+  height: 600px;
+}
+
+#flipbook div {
+  background: white;
+}
+
+#flipbook img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
+</head>
+
+<body>
+
+<div id="flipbook">
+
+  <div><img src="img1.jpg"></div>
+  <div><img src="img2.jpg"></div>
+  <div><img src="img3.jpg"></div>
+  <div><img src="img4.jpg"></div>
+  <div><img src="img5.jpg"></div>
+  <div><img src="img6.jpg"></div>
+  <div><img src="img7.jpg"></div>
+  <div><img src="img8.jpg"></div>
+  <div><img src="img9.jpg"></div>
+  <div><img src="img10.jpg"></div>
+  <div><img src="img11.jpg"></div>
+  <div><img src="img12.jpg"></div>
+  <div><img src="img13.jpg"></div>
+  <div><img src="img14.jpg"></div>
+  <div><img src="img15.jpg"></div>
+  <div><img src="img16.jpg"></div>
+  <div><img src="img17.jpg"></div>
+  <div><img src="img18.jpg"></div>
+  <div><img src="img19.jpg"></div>
+  <div><img src="img20.jpg"></div>
+  <div><img src="img21.jpg"></div>
+  <div><img src="img22.jpg"></div>
+
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#flipbook").turn({
+    width: 900,
+    height: 600,
+    autoCenter: true
+  });
+});
+</script>
+
+</body>
+</html>
